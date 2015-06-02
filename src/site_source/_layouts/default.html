@@ -49,7 +49,15 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
  </script>
 
  <!-- Tealium -->
- <script type="text/javascript" src="https://tags.tiqcdn.com/utag/rackspace/developer/prod/utag.js"></script>
+<script type="text/javascript">
+    var utag_data = {}
+
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/rackspace/developer/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
 
 <!-- Site Survey -->
 <script type="text/javascript">
